@@ -1,0 +1,15 @@
+<!-- <app-cast-slideshow [cast]="cast"></app-cast-slideshow> -->
+
+<div class="row animated__animated animated__fadeIn animated__faster" *ngIf="pelicula">
+    <div class="col-md-6">
+        <img [src]="pelicula.poster_path | poster" [alt]="pelicula.title" class="img-thumbnail">
+    </div>
+    <div class="col-md-6">
+        <h2>{{ pelicula.title }} <small>{{ pelicula.original_title }}</small></h2>
+        <p>{{ pelicula.release_date | date: 'dd/MM/yyyy' }}</p>
+        <p>{{ pelicula.vote_average }}</p>
+        <p>{{ pelicula.overview }}</p>
+        <p><a [href]="'https://www.youtube.com/results?search_query='+pelicula.original_title">Ver Pagina oficial</a></p>
+</div>
+<app-cast-slideshow [cast]="cast"></app-cast-slideshow>
+

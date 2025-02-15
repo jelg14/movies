@@ -1,0 +1,26 @@
+.movie-description {
+    background-color:black;
+    bottom: 0;
+    padding: 5px 30px;
+    position: absolute;
+    width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: white;
+}
+
+.swiper-container{
+    height: 330px;
+    width: 100%;
+}
+
+.carousel {
+    height: 330px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.carousel-caption{
+    color: white;
+}
